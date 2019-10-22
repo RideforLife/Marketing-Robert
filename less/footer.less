@@ -4,15 +4,19 @@ footer {
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
+    padding-top: 50px;
     div {
       display: flex;
       width: 40%;
-      justify-content: space-around;
+      justify-content: space-evenly;
     }
     a{
       align-items: center;
       font-size:4rem;
-      transition:all 0.6s;
+      .trans();
+      @media @phone{
+        font-size: 3rem;
+      }
     }
     p {
       text-align: center;
@@ -20,8 +24,12 @@ footer {
     }
     #icons {
       width: 20%;
+      @media @phone{
+        font-size: 3rem;
+      }
     }
     #copyright {
+      text-align: center;
       margin-top: 15px;
     }
 }

@@ -1,4 +1,8 @@
 // Mixins in here
+.trans(@time:0.6s){
+  transition: all @time;
+}
+
 .custom-btn(@bg-color:@button-bg, @width: 20rem, @txt-color:@white){
     display: flex;
     background-color:@bg-color;
@@ -12,7 +16,7 @@
     border-radius: 10px;
     border: 1px solid @silver;
     color: @txt-color;
-    transition:all 0.6s;
+    .trans();
     a {
       text-decoration: none;
       color: @white;
@@ -20,12 +24,12 @@
     &:hover{
       background-color: @link-color;
     }
-    @media @mobile{
-        width: 90%;
+    @media @tablet{
+        width: 60%;
         height: 50px;
     }
-    @media @tablet{
-        width: 70%;
+    @media @phone{
+        width: 90%;
         text-align: center;
     }
   }
