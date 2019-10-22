@@ -413,7 +413,7 @@ footer #copyright {
 }
 @media (max-width: 1024px) {
   .cardcontainer .cards .card {
-    margin: 110px 20%;
+    margin: 150px 5%;
   }
 }
 @media (max-width: 600px) {
