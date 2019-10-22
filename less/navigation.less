@@ -1,0 +1,63 @@
+// Navigation Styles here
+.navwrap {
+    display:flex;
+    width: 100%;
+    margin: 0 auto;
+    justify-content: center;
+    position: sticky;
+	overflow: hidden;
+	top: 0;
+    z-index: 1337;
+    .mainnav{
+        color: white;
+    }
+    nav{
+        display: flex;
+        width: 90%;
+        overflow: hidden;
+        margin: 20px auto;
+        justify-content: space-between;
+        align-items: center;
+        @media @mobile{
+            flex-direction: column;
+        }
+        div{
+            display: flex;
+            width: 20%;
+            justify-content: space-evenly;
+            @media @mobile{
+                width:70%;
+            }
+            a .mainnav{
+                color: white;
+                text-decoration: none;
+                font-size: 2rem;
+                transition:all 0.6s;
+                &:hover {
+                    color: @button-bg;
+                }
+            }
+            a{
+                text-decoration: none;
+                font-size: 2rem;
+                transition:all 0.6s;
+                &:hover {
+                    color: @button-bg;
+                }
+            }
+        }
+    }
+}
+
+#aboutnav {
+    background-color: white; opacity: 0.8;
+    nav {
+        margin-bottom: 0px;
+    }
+    a{
+        color: @button-bg;
+        &:hover {
+            color: @turquoise;
+        }
+    }
+}
