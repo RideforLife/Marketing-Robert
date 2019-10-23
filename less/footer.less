@@ -1,0 +1,35 @@
+footer {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 50px;
+    div {
+      display: flex;
+      width: 40%;
+      justify-content: space-evenly;
+    }
+    a{
+      align-items: center;
+      font-size:4rem;
+      .trans();
+      @media @phone{
+        font-size: 3rem;
+      }
+    }
+    p {
+      text-align: center;
+      color: @font-color;
+    }
+    #icons {
+      width: 20%;
+      @media @phone{
+        font-size: 3rem;
+      }
+    }
+    #copyright {
+      text-align: center;
+      margin-top: 15px;
+    }
+}
